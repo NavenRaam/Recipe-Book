@@ -231,12 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
         aiError.classList.add('hidden');
         findRecipesBtn.disabled = true;
 
-        // --- IMPORTANT: API KEY HANDLING FOR THIS PROJECT ---
-        // For a client-side only project like this one, you must paste the API key here to make it work.
-        // A browser CANNOT read a .env file.
-        // WARNING: This is NOT secure for a real website. Anyone could view your source code and steal the key.
-        // This method is ONLY for local development and class projects.
-        const apiKey = "AIzaSyBnJ6ixEzyeAj6H1Y7Q1M_zQ7BNNSQg3M0"; 
+        const apiKey = ""; 
         
         if (!apiKey) {
             aiError.textContent = `API Key is missing. Please add your key directly into the script.js file.`;
